@@ -13,6 +13,7 @@
     <title>hello struts2</title>
 </head>
 <body>
+<a href="/index.jsp">返回首页</a><br/>
 namespace决定了action的访问路径，默认为""，可以接收所有路径的action<br />
 namespace可以写为/，或者/xxx，或者/xxx/yyy，对应的action访问路径为/index.action，
 /xxx/index.action，或者/xxx/yyy/index.action.<br/>
@@ -20,6 +21,6 @@ namespace最好也用模块来进行命名<br>
 <br>
 struts2原理图
 <br>
-<img src="struts"/>
+<img src="/Iamge/struts.jpg"/>
 </body>
 </html>

@@ -13,6 +13,7 @@
 <body>
 <h1>IDEA Config Struts2 Nots</h1>
 <pre>
+    <a href="/index.jsp">返回首页</a><br/>
     一、使用gradle正常创建项目
     build.gradle配置
     dependencies {

@@ -67,4 +67,33 @@
          </result>
         </action>
     </package>
+    <package name="not3" namespace="/nots" extends="struts-default">
+        <!-- calss=""调用类方法-->
+        <action name="nots3" class="action.IndexAction">
+         <result>
+             /Nots3.jsp
+         </result>
+        </action>
+    </package>
+    <package name="not4" namespace="/nots" extends="struts-default">
+    <action name="nots4" class="action.IndexAction">
+        <result>
+            /Nots4.jsp
+        </result>
+    </action>
+    </package>
+    <package name="user" namespace="/user" extends="struts-default">
+        <action name="userAdd" class="action.UserAction" method="add">
+            <result>
+                /UserWeb/User_Add.jsp
+            </result>
+        </action>
+    </package>
+    <package name="user1" namespace="/user" extends="struts-default">
+        <action name="user" class="action.UserAction">
+            <result>
+                /UserWeb/User_Add.jsp
+            </result>
+        </action>
+    </package>
 </struts>

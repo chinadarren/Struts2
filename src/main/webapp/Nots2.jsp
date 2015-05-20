@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>Hello Struts2</title>
 </head>
 <body>
+<a href="/index.jsp">返回首页</a><br/>
 具体视图的返回可以由用户自己定义的Action来决定<br />
 具体的手段是根据返回的字符串找到对应的配置项，来决定视图的内容<br />
 具体Action的实现可以是一个普通的java类，里面有public String execute方法即可<br />
