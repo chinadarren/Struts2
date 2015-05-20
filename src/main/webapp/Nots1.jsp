@@ -19,7 +19,7 @@ namespace可以写为/，或者/xxx，或者/xxx/yyy，对应的action访问路�
 /xxx/index.action，或者/xxx/yyy/index.action.<br/>
 namespace最好也用模块来进行命名<br>
 <br>
-struts2原理图
+struts2原理图（此图图片使用绝对路径访问地址）
 <br>
 <img src="/Iamge/struts.jpg"/>
 </body>

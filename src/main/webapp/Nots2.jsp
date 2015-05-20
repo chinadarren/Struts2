@@ -18,7 +18,7 @@
 或者实现Action接口<br />
 不过最常用的是从ActionSupport继承，好处在于可以直接使用Struts2封装好的方法<br />
 <br>
-Struts2 Action实现java类图解<br>
+Struts2 Action实现java类图解（此次图片使用Struts2配置连接）<br>
 <img src="struts1"/>
 </body>
 </html>

@@ -59,7 +59,7 @@
             </result>
         </action>
     </package>
-    <package name="nots" namespace="/nots" extends="struts-default">
+    <package name="cmo3.nots" namespace="/nots" extends="struts-default">
         <!-- calss=""调用类方法-->
         <action name="nots2" class="action.IndexAction">
          <result>
@@ -67,7 +67,7 @@
          </result>
         </action>
     </package>
-    <package name="not3" namespace="/nots" extends="struts-default">
+    <package name="com4.nots" namespace="/nots" extends="struts-default">
         <!-- calss=""调用类方法-->
         <action name="nots3" class="action.IndexAction">
          <result>
@@ -75,25 +75,54 @@
          </result>
         </action>
     </package>
-    <package name="not4" namespace="/nots" extends="struts-default">
+    <package name="com5.nots" namespace="/nots" extends="struts-default">
     <action name="nots4" class="action.IndexAction">
         <result>
             /Nots4.jsp
         </result>
     </action>
     </package>
-    <package name="user" namespace="/user" extends="struts-default">
+    <package name="com9.nots" namespace="/nots" extends="struts-default">
+    <action name="nots5" class="action.IndexAction">
+        <result>
+            /Nots5.jsp
+        </result>
+    </action>
+    </package>
+    <package name="com6.nots" namespace="/user" extends="struts-default">
         <action name="userAdd" class="action.UserAction" method="add">
             <result>
                 /UserWeb/User_Add.jsp
             </result>
         </action>
     </package>
-    <package name="user1" namespace="/user" extends="struts-default">
+    <package name="com7.nots" namespace="/user" extends="struts-default">
         <action name="user" class="action.UserAction">
             <result>
                 /UserWeb/User_Add.jsp
             </result>
+        </action>
+    </package>
+    <package name="com8.nots" namespace="/actions" extends="struts-default">
+        <action name="Student_*" class="action.StudentAtion" method="{1}" >
+          <result>
+              /UserWeb/Student_add.jsp
+          </result>
+        </action>
+    </package>
+    <package name="com10.nots" namespace="/actionss" extends="struts-default">
+        <action name="Student_*" class="action.StudentAtion" method="{1}">
+            <result>
+                /UserWeb/Student_del.jsp
+            </result>
+        </action>
+    </package>
+    <package name="com11.nots" namespace="/steacher" extends="struts-default">
+        <action name="*_*" class="action.{1}Action" method="{2}">
+            <result>
+                /UserWeb/{1}_{2}.jsp
+            </result>
+
         </action>
     </package>
 </struts>
