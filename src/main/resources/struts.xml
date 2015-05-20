@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+        "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<!-- 指定Struts 2配置文件的根元素 -->
+<struts>
+
+<!--
+     指定全局国际化资源文件
+    <constant name="struts.custom.i18n.resources" value="mess"/>
+     指定国际化编码所使用的字符集
+    <constant name="struts.i18n.encoding" value="GBK"/>
+    指定constant的name为devMode表示处于开发模式，value=true修改配置文件内容自动热替换而不需要每次重新发布
+    <constant name="struts.devMode" value="true"/>
+     所有的Action定义都应该放在package下,Struts2中通过package来管理action,这里的包名name并不对应java类中的包
+    <package name="wbb" extends="struts-default">
+        <action name="login" class="w_basketboy.helloworld.action.LoginAction">
+             定义三个逻辑视图和物理资源之间的映射
+            <result name="input">/login.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+-->
+       <!--每个package的命名不能相同，解决namespace可以重名,和java中的包同理解决namespace重名问题。
+       namespace是访问的路径，namespace必须是/开头-->
+    <package name="com1.nots" namespace="/nots" extends="struts-default" >
+        <action name="nots1" >
+            <!--success默认为空，可以省略-->
+            <result name="success">
+                /Nots1.jsp
+            </result>
+        </action>
+    </package>
+   <package name="com2.nots" namespace="" extends="struts-default">
+        <action name="nots1">
+            <result >
+                /Nots1.jsp
+            </result>
+        </action>
+    </package>
+    <package name="nots" namespace="/nots" extends="struts-default">
+        <!-- calss=""调用类方法-->
+        <action name="nots2" class="action.IndexAction">
+         <result>
+             /Nots2.jsp
+         </result>
+        </action>
+    </package>
+</struts>
