@@ -24,6 +24,26 @@
 -->
        <!--每个package的命名不能相同，解决namespace可以重名,和java中的包同理解决namespace重名问题。
        namespace是访问的路径，namespace必须是/开头-->
+    <package name="com.iamge" namespace="/nots" extends="struts-default">
+        <action name="struts">
+            <result>
+                /Iamge/struts.jpg
+            </result>
+        </action>
+    </package> <package name="com1.iamge" namespace="/nots" extends="struts-default">
+        <action name="struts1">
+            <result>
+                /Iamge/struts1.jpg
+            </result>
+        </action>
+    </package>
+    <package name="com.config" namespace="/config" extends="struts-default">
+        <action name="config">
+            <result name="success">
+                /Config.jsp
+            </result>
+        </action>
+    </package>
     <package name="com1.nots" namespace="/nots" extends="struts-default" >
         <action name="nots1" >
             <!--success默认为空，可以省略-->

@@ -18,6 +18,6 @@
 不过最常用的是从ActionSupport继承，好处在于可以直接使用Struts2封装好的方法<br />
 <br>
 Struts2 Action实现java类图解<br>
-<img src="Iamge/struts1.jpg">
+<img src="struts1"/>
 </body>
 </html>

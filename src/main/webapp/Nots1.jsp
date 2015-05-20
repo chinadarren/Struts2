@@ -20,6 +20,6 @@ namespace最好也用模块来进行命名<br>
 <br>
 struts2原理图
 <br>
-<img src="Iamge/struts.jpg"/>
+<img src="struts"/>
 </body>
 </html>

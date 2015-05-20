@@ -13,15 +13,11 @@
 <body>
 <h2>Struts2 Dome Nots</h2>
 
-<a href ="Config.jsp">Config</a>
-<a href ="Nots1.jsp">Nots1</a>
-<a href ="Nots2.jsp">Nots2</a>
-<a href ="Nots3.jsp">Nots3</a>
-<a href ="Nots4.jsp">Nots4</a>
-<a href ="Nots5.jsp">Nots5</a>
-<a href ="Nots6.jsp">Nots6</a>
-<a href ="Nots7.jsp">Nots7</a>
-<a href ="Nots8.jsp">Nots8</a>
+<a href ="config/config">Config</a>
+<a href ="nots/nots1">Nots1</a>
+<a href ="nots/nots2">Nots2</a>
+<a href ="nots/nots3">Nots3</a>
+
 
 <h1>URL://localhost:8080/nots/nots</h1>
 
