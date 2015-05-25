@@ -7,7 +7,9 @@ import com.opensymphony.xwork2.ActionSupport;
  */
 public class IndexAction extends ActionSupport {
 
-    public String execute(){
+
+    public String ex(){
+
         return "success";
     }
 }

@@ -9,5 +9,8 @@ public class TeacherAction extends ActionSupport{
     public String add(){
         return "success";
     }
+    public String del(){
+        return "success";
+    }
 
 }

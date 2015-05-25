@@ -90,23 +90,23 @@
     </action>
     </package>
     <package name="com6.nots" namespace="/user" extends="struts-default">
-        <action name="userAdd" class="action.UserAction" method="add">
+        <action name="user" class="action.UserAction" method="add">
             <result>
                 /UserWeb/User_Add.jsp
             </result>
         </action>
     </package>
-    <package name="com7.nots" namespace="/user" extends="struts-default">
+    <package name="com7.nots" namespace="/duser" extends="struts-default">
         <action name="user" class="action.UserAction">
-            <result>
-                /UserWeb/User_Add.jsp
+            <result >
+                /UserWeb/User_del.jsp
             </result>
         </action>
     </package>
     <package name="com8.nots" namespace="/actions" extends="struts-default">
         <action name="Student_*" class="action.StudentAtion" method="{1}" >
           <result>
-              /UserWeb/Student_add.jsp
+              /UserWeb/add.jsp
           </result>
         </action>
     </package>
@@ -122,7 +122,23 @@
             <result>
                 /UserWeb/{1}_{2}.jsp
             </result>
-
+        </action>
+    </package>
+    <package name="com12.nots" namespace="/steachers" extends="struts-default">
+        <action name="*_*" class="action.{1}Action" method="{2}">
+            <result>
+                /UserWeb/{1}_{2}.jsp
+            </result>
+        </action>
+    </package>
+    <package name="com13.ntos" namespace="/pwd" extends="struts-default">
+        <action name="pass" class="action.UserAction" method="login">
+            <result name="error">
+                /UserWeb/User_Error.jsp
+            </result>
+            <result name="success">
+                /UserWeb/User_Add.jsp
+            </result>
         </action>
     </package>
 </struts>
