@@ -1,6 +1,7 @@
 package action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.sun.org.apache.xml.internal.utils.StringComparable;
 import model.User;
 
 /**
@@ -55,5 +56,18 @@ public class UserAction extends ActionSupport {
             return "error";
         }
         return "success";
+    }
+    private int type;
+    public int getType(){
+        return  type;
+    }
+    public void setType(int type){
+        this.type = type;
+    }
+
+    public String execute(){
+        if(type == 1) return "success";
+        else if(type == 2) return "error";
+        else return "mainpage";
     }
 }

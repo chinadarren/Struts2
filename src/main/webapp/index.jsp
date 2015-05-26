@@ -21,6 +21,9 @@
 <a href ="nots/nots5">Nots5</a>
 <a href ="/Nots6.jsp">Nots6</a>
 <a href ="/Nots7.jsp">Nots7</a>
+<a href ="/Nots8.jsp">Nots8</a>
+<a href ="/Nots9.jsp">Nots9</a>
+<a href ="/Nots10.jsp">Nots10</a>
 
 </body>
 </html>

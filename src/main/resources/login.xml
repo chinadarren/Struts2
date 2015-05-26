@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+        "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+        <struts>
+
+
+    <package name="com14.ntos" namespace="/login" extends="struts-default">
+        <action name="login*" class="action.login.LoginAction{1}" >
+            <result>
+                /UserWeb/UserLogin.jsp
+            </result>
+        </action>
+    </package>
+
+</struts>
